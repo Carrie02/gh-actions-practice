@@ -16,3 +16,12 @@ jobs:
       run: make hello_world
     - name: run
       run: ./hello_world
+
+  build-macos:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: make
+      run: make hello_world
+    - name: run
+      run: ./hello_world
